@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'PeachyKeenJF'; 
+  src: url('../assets//fonts/Peachy_Keen_JF.otf');
+  font-weight: normal;
+}
+
+	* {
+  box-sizing: border-box;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nanum Pen Script', cursive;
+  background: #fd2d78;
+}
+
+button {
+  font-family: "PeachyKeenJF", sans-serif;
+}
+
+.Grid-default {
+  display: grid;
+  grid-gap: 2vw;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.App-content {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 12px;
+}

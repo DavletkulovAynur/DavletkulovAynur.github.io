@@ -1,0 +1,29 @@
+---
+import Arrows from "./Arrows.astro";
+import Social from './Social.astro'
+import { Image } from 'astro:assets';
+import avatar from '../../assets/images/avatar.png'
+
+import './styles/index.scss'
+---
+
+<div>
+  <div class="Main Main__root">
+    <div class="App-content">
+      <div class="Info-developer">
+        <Arrows />
+        <div class="Info-developer__avatar">
+          <Image alt='avatar' class="Info-developer__avatar-img" src={avatar} />
+        </div>
+        <div class="Info-developer__about">
+          <h1 class="Info-developer__name">Aynur Codit</h1>
+          <h3 class="Info-developer__about-text">I`m a frontend developer</h3>
+        </div>
+      </div>
+      <div class="Main__social">
+          <Social />
+      </div>
+
+  </div>
+  
+</div>

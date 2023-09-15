@@ -1,0 +1,22 @@
+@import "./infoDeveloper.scss";
+@import "./social.scss";
+
+.Main {
+  &__root {
+    background-color: #002e3d;
+    padding-top: 100px;
+  }
+
+  &__content-box {
+    margin: auto;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__separator {
+    transform: rotate(180deg);
+  }
+}

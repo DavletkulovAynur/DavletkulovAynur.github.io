@@ -1,0 +1,67 @@
+.Header {
+  &__root {
+    position: absolute;
+    padding: 24px 0;
+    color: #f7f473;
+    width: 100%;
+  }
+
+  &__taxi, &__akbarsmed, &__collection {
+    .Header__nav-item {
+      color: blue;
+    }
+
+    .Header__logo {
+      color: blue;
+    }
+  }
+
+  &__logo {
+    font-size: 40px;
+    width: 100px;
+    color: #f7f473;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: auto;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-item {
+    margin-left: 40px;
+    font-size: 24px;
+    color: #f7f473;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__burger {
+    display: none;
+    width: 44px;
+  }
+
+  @media (max-width: 768px) {
+    &__burger {
+      display: block;
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+}
+

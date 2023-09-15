@@ -1,0 +1,16 @@
+.Social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin: 0 16px;
+    display: block;
+    width: 40px;
+    height: auto;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

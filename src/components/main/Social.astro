@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+
+import tg from '.././../assets/images/social/tg.png'
+import instagram from '.././../assets/images/social/instagram.png'
+import youtube from '.././../assets/images/social/youtube.png'
+import mail from '.././../assets/images/social/mail.png'
+
+const socialData = [
+  {
+    id: 1,
+    socialImg: tg,
+    href: "https://t.me/Davletkulov",
+  },
+  {
+    id: 2,
+    socialImg: instagram,
+    href: "https://www.instagram.com/davletkulov/",
+  },
+  {
+    id: 3,
+    socialImg: youtube,
+    href: "https://www.youtube.com/channel/UCKl6wSDQYfNdF3ENcdXB6vg",
+  },
+  {
+    id: 4,
+    socialImg: mail,
+    href: "mailto:ainurikdav@gmail.com",
+  },
+];
+---
+
+
+<div class="Social">
+  {socialData.map((item) => {
+    return (
+      <a
+        target="_blank"
+        href={item.href}
+        class="Social__item"
+      >
+        <img src={item.socialImg.src} alt="social" />
+      </a>
+    );
+  })}
+</div>
