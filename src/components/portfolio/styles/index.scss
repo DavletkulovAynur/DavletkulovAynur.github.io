@@ -1,0 +1,166 @@
+.Portfolio {
+  &_content {
+    max-width: 960px;
+  }
+
+  &__root {
+    background: #00f5f5;
+  }
+
+  &__title {
+    font-family: "PeachyKeenJF", sans-serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: right;
+  }
+
+  svg {
+    width: 100%;
+    transform: rotate(360deg);
+    display: block;
+  }
+
+  svg path {
+    fill: #fd2d78;
+  }
+
+  &__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__img-wrapper {
+    border: 8px solid #002f3c;
+  }
+
+  @media (max-width: 768px) {
+    &__cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@keyframes magnifier {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.Portfolio__item {
+  padding: 12px;
+  padding-bottom: 48%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+
+  .text {
+    color: #6b00ff;
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .test {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-adventure {
+    .text {
+      color: #fff;
+    }
+  }
+
+  &-doctor {
+    .text {
+      color: #6b00ff;
+    }
+  }
+
+  &-online-store {
+    .text {
+      color: #fff;
+    }
+  }
+
+  &-taxi {
+    .text {
+      color: #ff0066;
+    }
+  }
+
+  &-collection {
+    .text {
+      color: #127c62;
+    }
+  }
+
+  &-euro {
+    .text {
+      color: #fff;
+    }
+  }
+
+  &-img {
+    background: url("../../../../Common/assets/img/portfolio/football.png")
+      center/contain no-repeat;
+    background-color: #306fb6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &-img-adventure {
+    background: url("../../../../Common/assets/img/portfolio/travel.png")
+      center/contain no-repeat;
+    background-color: #8dc4b7;
+  }
+
+  &-img-online-store {
+    background: url("../../../../Common/assets/img/portfolio/flame-online-sale.png")
+      center/contain no-repeat;
+    background-color: #fc00ff;
+  }
+
+  &-img-taxi {
+    background: url("../../../../Common/assets/img/portfolio/taxi.png")
+      center/contain no-repeat;
+    background-color: #fec832;
+  }
+
+  &-img-collection {
+    background: url("../../../../Common/assets/img/portfolio/collection.png")
+      center/contain no-repeat;
+    background-color: #ffc6af;
+  }
+
+  &-img-doctor {
+    background: url("../../../../Common/assets/img/portfolio/doctor.png")
+      center/contain no-repeat;
+    background-color: #e1e1e1;
+  }
+
+  &-text {
+    position: absolute;
+    z-index: 2;
+    padding: 12px;
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .Portfolio__item-img {
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-name: magnifier;
+    }
+  }
+}
