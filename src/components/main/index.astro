@@ -3,7 +3,7 @@ import Arrows from "./Arrows.astro";
 import Social from './Social.astro'
 import { Image } from 'astro:assets';
 import avatar from '../../assets/images/avatar.png'
-
+import footer from '../../assets/images/bg/main-separator.svg'
 import './styles/index.scss'
 ---
 
@@ -23,7 +23,6 @@ import './styles/index.scss'
       <div class="Main__social">
           <Social />
       </div>
-
   </div>
-  
+  <img src={footer.src} alt="arrow" class="Main__separator" />
 </div>

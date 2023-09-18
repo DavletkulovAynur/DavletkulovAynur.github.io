@@ -1,20 +1,21 @@
 @font-face {
-  font-family: 'PeachyKeenJF'; 
-  src: url('../assets//fonts/Peachy_Keen_JF.otf');
+  font-family: "PeachyKeenJF";
+  src: url("../../assets/fonts/Peachy_Keen_JF.otf");
   font-weight: normal;
 }
 
-	* {
+* {
   box-sizing: border-box;
 }
 
-body,html {
+body,
+html {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
   background: #fd2d78;
 }
 

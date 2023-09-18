@@ -62,47 +62,6 @@
     margin: 0;
   }
 
-  .test {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  &-adventure {
-    .text {
-      color: #fff;
-    }
-  }
-
-  &-doctor {
-    .text {
-      color: #6b00ff;
-    }
-  }
-
-  &-online-store {
-    .text {
-      color: #fff;
-    }
-  }
-
-  &-taxi {
-    .text {
-      color: #ff0066;
-    }
-  }
-
-  &-collection {
-    .text {
-      color: #127c62;
-    }
-  }
-
-  &-euro {
-    .text {
-      color: #fff;
-    }
-  }
-
   &-img {
     background: url("../../../../Common/assets/img/portfolio/football.png")
       center/contain no-repeat;
@@ -116,34 +75,22 @@
     left: 0;
   }
 
-  &-img-adventure {
-    background: url("../../../../Common/assets/img/portfolio/travel.png")
+  &-img-rt {
+    background: url("../../../assets/images/portfolio/football.png")
       center/contain no-repeat;
-    background-color: #8dc4b7;
+    background-color: #e1e1e1;
   }
 
-  &-img-online-store {
-    background: url("../../../../Common/assets/img/portfolio/flame-online-sale.png")
-      center/contain no-repeat;
-    background-color: #fc00ff;
-  }
-
-  &-img-taxi {
-    background: url("../../../../Common/assets/img/portfolio/taxi.png")
-      center/contain no-repeat;
-    background-color: #fec832;
-  }
-
-  &-img-collection {
-    background: url("../../../../Common/assets/img/portfolio/collection.png")
+  &-img-modul {
+    background: url("../../../assets/images/portfolio/football.png")
       center/contain no-repeat;
     background-color: #ffc6af;
   }
 
-  &-img-doctor {
-    background: url("../../../../Common/assets/img/portfolio/doctor.png")
+  &-img-taxi {
+    background: url("../../../assets/images/portfolio/football.png")
       center/contain no-repeat;
-    background-color: #e1e1e1;
+    background-color: #fec832;
   }
 
   &-text {
