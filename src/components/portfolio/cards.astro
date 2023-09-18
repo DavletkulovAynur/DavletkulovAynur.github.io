@@ -4,38 +4,31 @@ const cards = [
   {
     id: 'modul',
     name: 'Modulbank',
-    // href: "/portfolio/euro2020",
-    // plashka: {
-    //   name: 'Work projects',
-    //   color: 'black'
-    // },
-  },
-  {
-    id: 'rt',
-    name: 'online store',
-    href: "/portfolio/store",
-    // plashka: {
-    //   name: 'Pet Project',
-    //   color: 'black'
-    // },
+    href: "https://zircon-airboat-93a.notion.site/Development-of-Tax-Payment-Functionality-fa7c95d2e3bc4809bce58b2f58b69d5d",
   },
   {
     id: 'taxi',
     name: 'Yul Yort',
     href: "/portfolio/taxi",
-    // plashka: {
-    //   name: 'Startup',
-    //   color: 'black'
-    // },
+  },
+  {
+    id: 'rt',
+    name: 'RTTV',
+    href: "/portfolio/store",
   },
 ]
 ---
 <div class="Portfolio__cards Grid-default">
   {cards.map((item, index) => {
     return (
-      <div>
-        {item.name}
+      <a href={item.href} target="_blank">
+        <div class={`Portfolio__item Portfolio__item-${item.id}`}>
+        <div class="Portfolio__item-text">
+          <h4 class="text"> {item.name}</h4>
+        </div>
+        <div class={`Portfolio__item-img Portfolio__item-img-${item.id}`}></div>
       </div>
+      </a>
     );
   })}
 </div>

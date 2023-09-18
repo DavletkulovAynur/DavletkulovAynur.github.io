@@ -1,16 +1,25 @@
 ---
+import burger from '../../assets/images/icons/burger.png'
+
 
 ---
+<script>
+  import { isOpen } from '../../store/index';
+  
+  function openMenu() {
+    console.log('super')
+    isOpen.set(true);
+  }
+  document.getElementById('test')?.addEventListener('click', openMenu);
+</script>
 
 
 <div class={`Header Header__root`}>
   <div class="App-content Header__box">
-    <!-- <div onClick={openMobileMenu} class="Header__burger">
-      <img src={burger} />
-    </div> -->
-    <nav class="Header__nav">
-      download
-    </nav>
+    <a href='/public/files/davletkulov_cv.pdf' class="Header__download" target="_blank">Download CV</a>
+    <div id="test" class="Header__burger">
+      <img src={burger.src} alt="burger"/>
+    </div>
   </div>
 </div>
 
@@ -23,15 +32,10 @@
       width: 100%;
     }
 
-    &__taxi, &__akbarsmed, &__collection {
-      .Header__nav-item {
-        color: blue;
-      }
-
-      .Header__logo {
-        color: blue;
-      }
+    &__download {
+      color: aqua;
     }
+
 
     &__logo {
       font-size: 40px;
@@ -56,29 +60,9 @@
       align-items: center;
     }
 
-    &__nav-item {
-      margin-left: 40px;
-      font-size: 24px;
-      color: #f7f473;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-
     &__burger {
-      display: none;
       width: 44px;
     }
 
-    @media (max-width: 768px) {
-      &__burger {
-        display: block;
-      }
-
-      &__nav {
-        display: none;
-      }
-    }
   }
 </style>
