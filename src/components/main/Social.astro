@@ -1,10 +1,10 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
-import tg from '.././../assets/images/social/tg.png'
-import instagram from '.././../assets/images/social/instagram.png'
-import youtube from '.././../assets/images/social/youtube.png'
-import mail from '.././../assets/images/social/mail.png'
+import tg from ".././../assets/images/social/tg.png";
+import instagram from ".././../assets/images/social/instagram.png";
+import youtube from ".././../assets/images/social/youtube.png";
+import mail from ".././../assets/images/social/mail.png";
 
 const socialData = [
   {
@@ -30,17 +30,14 @@ const socialData = [
 ];
 ---
 
-
 <div class="Social">
-  {socialData.map((item) => {
-    return (
-      <a
-        target="_blank"
-        href={item.href}
-        class="Social__item"
-      >
-        <img src={item.socialImg.src} alt="social" />
-      </a>
-    );
-  })}
+  {
+    socialData.map((item) => {
+      return (
+        <a target="_blank" href={item.href} class="Social__item">
+          <img src={item.socialImg.src} alt="social" />
+        </a>
+      );
+    })
+  }
 </div>

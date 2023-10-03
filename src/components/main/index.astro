@@ -1,10 +1,10 @@
 ---
 import Arrows from "./Arrows.astro";
-import Social from './Social.astro'
-import { Image } from 'astro:assets';
-import avatar from '../../assets/images/avatar.png'
-import footer from '../../assets/images/bg/main-separator.svg'
-import './styles/index.scss'
+import Social from "./Social.astro";
+import { Image } from "astro:assets";
+import avatar from "../../assets/images/avatar.png";
+import footer from "../../assets/images/bg/main-separator.svg";
+import "./styles/index.scss";
 ---
 
 <div>
@@ -13,16 +13,17 @@ import './styles/index.scss'
       <div class="Info-developer">
         <Arrows />
         <div class="Info-developer__avatar">
-          <Image alt='avatar' class="Info-developer__avatar-img" src={avatar} />
+          <Image alt="avatar" class="Info-developer__avatar-img" src={avatar} />
         </div>
         <div class="Info-developer__about">
           <h1 class="Info-developer__name">Aynur Codit</h1>
-          <h3 class="Info-developer__about-text">I`m a frontend developer</h3>
+          <h3 class="Info-developer__about-text">I`m a front-end engineer</h3>
         </div>
       </div>
       <div class="Main__social">
-          <Social />
+        <Social />
       </div>
+    </div>
+    <img src={footer.src} alt="arrow" class="Main__separator" />
   </div>
-  <img src={footer.src} alt="arrow" class="Main__separator" />
 </div>

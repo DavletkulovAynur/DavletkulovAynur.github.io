@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+
+import about from "../../assets/images/about-me.png";
+
+---
+
+<div class="App-content">
+  <p class="title">
+    Who are you, warrior?
+  </p>
+  <div class="img-wrapper">
+    <Image alt="avatar" class="about-img" src={about} />
+  </div>
+</div>
+
+
+<style lang="scss">
+  .about {
+    max-width: 960px;
+  }
+
+  .title {
+    text-align: center;
+    font-family: "PeachyKeenJF", sans-serif;
+    color: #f7f474;
+    margin: 0;
+    font-size: 36px;
+  }
+  .img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .about-img {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+  }
+</style>

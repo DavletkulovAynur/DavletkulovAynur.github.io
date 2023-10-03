@@ -1,32 +1,39 @@
-
 ---
 const arrowsData = [
   {
     title: "That's me",
-    position: 'left',
+    position: "left",
     id: 1,
   },
   {
     title: "I almost always smile because the optimist in life",
-    position: 'top',
+    position: "top",
     id: 2,
   },
   {
     title: "Independently learned programming and continue to learn every day",
-    position: 'right',
+    position: "right",
     id: 3,
   },
-]
+];
 
-import { Image } from 'astro:assets';
-import arrow from '../../assets/images/icons/arrow.svg'
+import { Image } from "astro:assets";
+import arrow from "../../assets/images/icons/arrow.svg";
 ---
 
 <ul class="plain-list pokeList">
-  {arrowsData.map((item) => (
-      <li class={`Info-developer__arrow-about Info-developer__${item.position}`}>
-          <p class="Info-developer__arrow-about-title">{item.title}</p>
-          <Image src={arrow} alt="arrow" class="Info-developer__arrow-about-icon" />
-        </li>
-  ))}
+  {
+    arrowsData.map((item) => (
+      <li
+        class={`Info-developer__arrow-about Info-developer__${item.position}`}
+      >
+        <p class="Info-developer__arrow-about-title">{item.title}</p>
+        <Image
+          src={arrow}
+          alt="arrow"
+          class="Info-developer__arrow-about-icon"
+        />
+      </li>
+    ))
+  }
 </ul>
