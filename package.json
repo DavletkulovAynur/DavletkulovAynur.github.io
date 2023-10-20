@@ -1,11 +1,11 @@
 {
-  "name": "davletkulovaynur",
+  "name": "davletkulov",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://davletkulovaynur.github.io/",
+  "homepage": "https://davletkulovaynur.github.io/portfolio",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
@@ -17,6 +17,7 @@
     "@fontsource/russo-one": "^5.0.12",
     "@fontsource/twinkle-star": "^5.0.12",
     "astro": "^3.1.0",
+    "gh-pages": "^6.0.0",
     "nanostores": "^0.9.3",
     "sass": "^1.67.0"
   }
