@@ -1,15 +1,75 @@
+---
+import { Image } from "astro:assets";
+
+import ts from "../../assets/images/icons/stack/ts.png";
+import react from "../../assets/images/icons/stack/react.png";
+import redux from "../../assets/images/icons/stack/redux.png";
+import docker from "../../assets/images/icons/stack/docker.png";
+import html from "../../assets/images/icons/stack/html.png";
+import node from "../../assets/images/icons/stack/node.png";
+---
+
 <div class="stack">
-  <p>Tech stack</p>
-  <ul>
-    <li>TS</li>
-    <li>React</li>
-    <li>Docker</li>
-    <li>Nest</li>
+  <div class="title">
+    <p>Tech stack</p>
+    <div class="line"></div>
+  </div>
+  <ul class="list">
+    <li class="item">
+      <Image alt="ts" class="icons" src={ts} />
+    </li>
+    <li class="item">
+      <Image alt="react" class="icons" src={react} />
+    </li>
+    <li class="item">
+      <Image alt="react" class="icons" src={html} />
+    </li>
+    <li class="item">
+      <Image alt="react" class="icons" src={redux} />
+    </li>
+    <li class="item">
+      <Image alt="react" class="icons" src={docker} />
+    </li>
+    <li class="item">
+      <Image alt="react" class="icons" src={node} />
+    </li>
   </ul>
 </div>
 <style lang="scss">
   .stack {
+    margin-top: 100px;
     display: flex;
+    align-items: center;
   }
 
+  .title {
+    display: flex;
+    align-items: center;
+
+    p {
+      white-space: nowrap;
+    }
+  }
+
+  .line {
+    width: 1px;
+    height: 40px;
+    background: #000;
+    margin: 0 60px;
+  }
+  .item {
+    list-style-type: none;
+  }
+  .list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+  }
+
+  .icons {
+    width: 40px;
+    height: auto;
+  }
 </style>
