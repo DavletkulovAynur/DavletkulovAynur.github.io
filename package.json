@@ -1,8 +1,11 @@
 {
-  "name": "technological-trappist",
+  "name": "davletkulovaynur",
   "type": "module",
   "version": "0.0.1",
+  "homepage": "https://davletkulovaynur.github.io/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
