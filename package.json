@@ -2,10 +2,7 @@
   "name": "davletkulov",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://davletkulovaynur.github.io/portfolio",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
