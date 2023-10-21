@@ -1,8 +1,9 @@
+<!-- FIXME: исправить ошибку -->
 <script>
   import { isOpen } from "../../store/index";
 
   const mobileMenu = document.querySelector("[data-mobile-menu]");
-  const closeMenuButton = document.querySelector("[data-close-menu]");
+  const closeMenuButton = document.querySelectorAll("[data-close-menu]");
 
   isOpen.subscribe((open) => {
     mobileMenu.style.display = open ? "block" : "none";
@@ -12,7 +13,9 @@
     isOpen.set(false);
   }
 
-  closeMenuButton?.addEventListener("click", closeMenu);
+  closeMenuButton.forEach((item) => {
+    item?.addEventListener("click", closeMenu);
+  });
 </script>
 
 <menu data-mobile-menu class="Mobile-menu">
@@ -22,15 +25,17 @@
     >
   </div>
   <div class="Mobile-menu__items">
-    <h1>Portfolio</h1>
-    <h1>About me</h1>
-    <h1>Articles</h1>
+    <!-- добавить ссылки -->
+    <a data-close-menu href="#portfolio" class="Mobile-menu__item">Portfolio</a>
+    <a data-close-menu class="Mobile-menu__item">About me</a>
+    <a data-close-menu class="Mobile-menu__item">Articles</a>
   </div>
 </menu>
 
 <style lang="scss">
   .Mobile-menu {
     position: fixed;
+    display: none;
     background: #f7f473;
     width: 100%;
     height: 100%;
@@ -45,11 +50,16 @@
     }
 
     &__button {
+      cursor: pointer;
       padding: 24px;
       background: none;
       border: none;
       font-size: 24px;
       text-transform: uppercase;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     &__items {
@@ -62,11 +72,16 @@
     }
 
     &__item {
-      font-size: 50px;
+      font-size: 24px;
       text-transform: uppercase;
       text-align: center;
       padding: 30px;
+      margin: 0;
       color: #000;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
   }
 </style>
