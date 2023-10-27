@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import about from "../../assets/images/about-me.png";
+---
+
+<div class="Footer Footer__root">
+  <h4 class="Footer__copyright">© Copyright 1994 Aynur Codit</h4>
+</div>
+<style lang="scss">
+  .Footer {
+    &__root {
+      background: url(../../assets/images/footer.svg) no-repeat bottom;
+      background-color: #403fbe;
+      width: 100%;
+      min-height: 440px;
+      height: auto;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    &__copyright {
+      font-family: "PeachyKeenJF", sans-serif;
+      color: #000;
+      font-size: 32px;
+      margin: 0 0 24px;
+      padding: 0 20px;
+    }
+    @media (max-width: 768px) {
+      &__copyright {
+        font-size: 20px;
+      }
+    }
+  }
+</style>

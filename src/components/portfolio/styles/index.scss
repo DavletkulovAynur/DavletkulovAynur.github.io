@@ -10,7 +10,7 @@
   &__title {
     font-family: "PeachyKeenJF", sans-serif;
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     text-align: right;
   }
 
@@ -57,14 +57,14 @@
   border-radius: 12px;
 
   .text {
-    color: #6b00ff;
+    color: #fff;
     font-size: 36px;
     margin: 0;
   }
 
   &-img {
-    background: url("../../../../Common/assets/img/portfolio/modul.png")
-      center/contain no-repeat;
+    // background: url("../../../../Common/assets/img/portfolio/modul.png")
+    //   center/contain no-repeat;
     background-color: #306fb6;
     position: absolute;
     width: 100%;
@@ -76,21 +76,21 @@
   }
 
   &-img-rt {
-    background: url("../../../assets/images/portfolio/modul.png") center/contain
-      no-repeat;
-    background-color: #e1e1e1;
+    // background: url("../../../assets/images/portfolio/modul.png") center/contain
+    //   no-repeat;
+    background-color: #403fbe;
   }
 
   &-img-modul {
-    background: url("../../../assets/images/portfolio/football.png")
-      center/contain no-repeat;
-    background-color: #ffc6af;
+    // background: url("../../../assets/images/portfolio/football.png")
+    //   center/contain no-repeat;
+    background-color: #403fbe;
   }
 
   &-img-taxi {
-    background: url("../../../assets/images/portfolio/modul.png") center/contain
-      no-repeat;
-    background-color: #fec832;
+    // background: url("../../../assets/images/portfolio/modul.png") center/contain
+    //   no-repeat;
+    background-color: #403fbe;
   }
 
   &-text {

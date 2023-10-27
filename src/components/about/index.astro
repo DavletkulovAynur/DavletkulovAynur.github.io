@@ -2,24 +2,22 @@
 import { Image } from "astro:assets";
 
 import about from "../../assets/images/about-me.png";
-
 ---
 
-<div class="App-content">
-  <p class="title">
-    Who are you, warrior?
-  </p>
-  <div class="img-wrapper">
-    <Image alt="avatar" class="about-img" src={about} />
+<div class="about">
+  <div class="App-content">
+    <p class="title">Who are you, warrior?</p>
+    <div class="img-wrapper">
+      <Image alt="avatar" class="about-img" src={about} />
+    </div>
   </div>
 </div>
 
-
 <style lang="scss">
   .about {
-    max-width: 960px;
+    background: #fd2c78;
   }
-
+  
   .title {
     text-align: center;
     font-family: "PeachyKeenJF", sans-serif;
