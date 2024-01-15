@@ -1,34 +1,38 @@
-
 ---
 const cards = [
   {
-    id: 'modul',
-    name: 'Modulbank',
+    id: "modul",
+    name: "Modulbank",
     href: "https://zircon-airboat-93a.notion.site/Development-of-Tax-Payment-Functionality-fa7c95d2e3bc4809bce58b2f58b69d5d",
   },
   {
-    id: 'taxi',
-    name: 'Yul Yort',
-    href: "/portfolio/taxi",
+    id: "taxi",
+    name: "Yul Yort",
+    href: "https://zircon-airboat-93a.notion.site/Yul-Yort-5207ec7cdf1345f99c6fb58191b3da49?pvs=4",
   },
   {
-    id: 'rt',
-    name: 'RTTV',
-    href: "/portfolio/store",
+    id: "rt",
+    name: "RTTV",
+    href: "",
   },
-]
+];
 ---
+
 <div class="Portfolio__cards Grid-default">
-  {cards.map((item, index) => {
-    return (
-      <a href={item.href} target="_blank">
-        <div class={`Portfolio__item Portfolio__item-${item.id}`}>
-        <div class="Portfolio__item-text">
-          <h4 class="text"> {item.name}</h4>
-        </div>
-        <div class={`Portfolio__item-img Portfolio__item-img-${item.id}`}></div>
-      </div>
-      </a>
-    );
-  })}
+  {
+    cards.map((item, index) => {
+      return (
+        <a href={item.href} target="_blank">
+          <div class={`Portfolio__item Portfolio__item-${item.id}`}>
+            <div class="Portfolio__item-text">
+              <h4 class="text"> {item.name}</h4>
+            </div>
+            <div
+              class={`Portfolio__item-logo Portfolio__item-logo-${item.id}`}
+            />
+          </div>
+        </a>
+      );
+    })
+  }
 </div>

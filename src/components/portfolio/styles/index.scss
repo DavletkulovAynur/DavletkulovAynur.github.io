@@ -55,6 +55,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 12px;
+  background-color: #403fbe;
 
   .text {
     color: #fff;
@@ -62,36 +63,13 @@
     margin: 0;
   }
 
-  &-img {
-    // background: url("../../../../Common/assets/img/portfolio/modul.png")
-    //   center/contain no-repeat;
-    background-color: #306fb6;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  &-img-rt {
-    // background: url("../../../assets/images/portfolio/modul.png") center/contain
-    //   no-repeat;
-    background-color: #403fbe;
-  }
-
-  &-img-modul {
-    // background: url("../../../assets/images/portfolio/football.png")
-    //   center/contain no-repeat;
-    background-color: #403fbe;
-  }
-
-  &-img-taxi {
-    // background: url("../../../assets/images/portfolio/modul.png") center/contain
-    //   no-repeat;
-    background-color: #403fbe;
-  }
+  // &-logo {
+  //   background: url("../../../assets/images/portfolio/ria.png") center/contain
+  //     no-repeat;
+  //   position: absolute;
+  //   width: 50%;
+  //   height: 50%;
+  // }
 
   &-text {
     position: absolute;
@@ -101,13 +79,13 @@
     right: 0;
   }
 
-  &:hover {
-    cursor: pointer;
+  // &:hover {
+  //   cursor: pointer;
 
-    .Portfolio__item-img {
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-      animation-name: magnifier;
-    }
-  }
+  //   .Portfolio__item-logo {
+  //     animation-duration: 1s;
+  //     animation-fill-mode: forwards;
+  //     animation-name: magnifier;
+  //   }
+  // }
 }

@@ -9,6 +9,7 @@ import html from "../../assets/images/icons/stack/html.png";
 import node from "../../assets/images/icons/stack/node.png";
 ---
 
+<!-- FIXME: написать через map -->
 <div class="stack">
   <div class="title">
     <p>Tech stack</p>
@@ -72,5 +73,24 @@ import node from "../../assets/images/icons/stack/node.png";
   .icons {
     width: 40px;
     height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      display: none;
+    }
+
+    .line {
+      display: none;
+    }
+
+    .list {
+      padding: 10px;
+    }
+
+    .icons {
+      width: 30px;
+      height: auto;
+    }
   }
 </style>
